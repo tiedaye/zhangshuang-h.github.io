@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/website1.css">
+    <style type="text/css">
+        .icon {
+            width: 1em; height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="myWebsite">
+    <!--<div id="head">-->
+            <!--<div id="menu" :class="{down:downShow}">-->
+                <!--<img src="web-image/小丸子.jpeg" alt="" @click="click">-->
+                <!--<ul class="title">-->
+                    <!--<li  v-for="(val,index) in arr" v-show="val.style"  class="title-li"-->
+                         <!--:class="{bgColor:val.bg}" @mouseover="val.bg=true" @mouseout="val.bg=false">-->
+                        <!--<a href="" >-->
+                           <!--{{val.name}}-->
+                        <!--</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+             <!--<div id="header">-->
+                <!--<img src="web-image/小丸子.jpeg" alt="">-->
+                <!--<h3>Welcome</h3>-->
+            <!--</div>-->
+    <!--</div>-->
+    <div id="middle">
+        <div id='aboutMe'>
+            <ul class="iconfont">
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-ziyuan4"></use>
+                    </svg>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-ziyuan3"></use>
+                    </svg>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-ziyuan2"></use>
+                    </svg>
+                </li>
+                <p>About Me</p>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-ziyuan1"></use>
+                    </svg>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-ziyuan8"></use>
+                    </svg>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-ziyuan9"></use>
+                    </svg>
+                </li>
+
+            </ul>
+        </div>
+        <div class="infor-img2">
+            <img src="web-image/小熊.jpg" alt="">
+        </div>
+        <div class="infor-img">
+            <img src="web-image/小奶熊.png" alt="">
+        </div>
+        <div id="container">
+            <div id="num">
+                <ul>
+                    <li class="num1">
+                        <img src="web-image/banner.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="web-image/background.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="web-image/background1.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="web-image/background2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="web-image/background3.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="web-image/background4.png" alt="">
+                    </li>
+                    <li>
+                        <img src="web-image/banner2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="web-image/banner2.jpg" alt="">
+                    </li>
+                </ul>
+
+            </div>
+            <ul id="font">
+                <li id="left">left</li>
+                <li id="right">right</li>
+             </ul>
+        </div>
+        <div id="information">
+            <div class="infor-font">
+                <p>hey,我叫张爽</p>
+                东北农业大学2016级，本科生，精通html，css ，js，vue 等多门语言
+                <p>具有极强的学习和吃苦耐劳的能力</p>
+                战点十六分骄傲而儿童怕热高筋面粉的故事，绽放是热哦翁但是斯科夫斯卡林贵
+                过妃，绽放厚度为但是安徽的经济
+                <p>绝对是flak发撒离开着急啊是完全hi哦人也我会回答记者张</p>
+                <p>说我，解决广东色，历经是否会的时间经历了对少。</p>
+            </div>
+        </div>
+    </div>
+    <div id="goup"></div>
+    <div id="technology"></div>
+</div>
+<script src="../tmall/font/iconfont.js"></script>
+<script src="../Dom/jslib.js"></script>
+<script src="assets/js/website1.js"></script>
+<script src="assets/js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el:"#head",
+        data:{
+            arr:[
+                {name:'Home',style:false,bg:false}, {name:'About',style:false,bg:false},
+                {name:'Contact',style:false,bg:false}, {name:'Other',style:false,bg:false}
+            ],
+            downShow:false
+        },
+        methods:{
+            click(){
+                this.arr.forEach(elem=>{
+                    elem.style = !elem.style;
+                });
+                this.downShow = !this.downShow;
+            }
+        }
+    })
+</script>
+</body>
+</html>

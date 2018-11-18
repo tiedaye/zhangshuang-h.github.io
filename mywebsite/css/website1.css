@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    width: 1500px;
+}
+@keyframes yyy {
+    from{
+
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+#middle .infor-img2{
+    position: relative;
+}
+#middle .infor-img2 img{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: -45px;
+    left: 350px;
+}
+#middle .infor-img{
+    position: relative;
+}
+#middle .infor-img img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -40px;
+    left: 1000px;
+}
+#middle .infor-font{
+    width:600px;
+    height: 800px;
+    background: white;
+    padding: 30px 30px;
+    border: 2px solid #cccccc;
+    color:gray;
+    float: left;
+}
+#contain{
+    width: 520px;
+    height: 460px;
+    margin: 10px 40px;
+    position: relative;
+    float: left;
+}
+#contain img{
+    width: 520px;
+    height: 460px;
+    position: absolute;
+}
+#contain .num{
+    position: absolute;
+    right: 200px;
+    bottom: 10px;
+    z-index: 9999999;
+}
+#contain .arrows{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 9999999;
+}
+#contain .num li,.arrows span{
+    float: left;
+    color: red;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 10px;
+    background: bisque;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#contain li.selected{
+    background: hotpink;
+}
+#aboutMe p{
+     font-size: 40px;
+     color: #ffd3be;
+ }
+#aboutMe .iconfont{
+    width: 1500px;
+    overflow: hidden;
+    margin: 0 100px;
+}
+#aboutMe .iconfont li,p{
+    margin: 50px 50px;
+    float: left;
+}
+#aboutMe .iconfont .icon{
+    font-size: 70px;
+}
+#container{
+    width: 800px;
+    height: 300px;
+    margin: 100px auto;
+    border: 1px solid #000000;
+    position: relative;
+    overflow: hidden;
+}
+#container #num{
+    width:1600px ;
+    position: absolute;
+    left:0;
+}
+#container #num li img{
+    width:200px;
+    height: 180px;
+}
+#container #num li{
+    float: left;
+
+}
+#container #font{
+    margin: 230px 320px;
+}
+
+#container #font li{
+    width: 70px;
+    height: 50px;
+    background: #cccccc;
+    float: left;
+    margin-left: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+}
+#information{
+    overflow: hidden;
+}
+#information .infor-font{
+    width:650px;
+    height: 450px;
+    float: right;
+    margin-right: 80px;
+    line-height: 30px;
+    font-weight: lighter;
+    /*background:#f3e3c6;*/
+}
+#information .infor-font p{
+    margin: 0 0;
+    width: 650px;
+    text-align: center;
+}
+#technology {
+    width:100%;
+    height: 500px;
+    margin: 50px 30px;
+}
+#technology .chart .language{
+    font-size: 25px;
+    color: #4ebdd1;
+}
+#technology .chart .dongImg{
+    width:280px;
+    height: 280px;
+}
+#myWebsite #workContact{
+    background: url("../web-image/bg1.jpg");
+}
+
+#myWebsite #mywork{
+    width:100%;
+    height: 600px;
+    overflow: hidden;
+    margin-top: 100px;
+    border: 1px solid transparent;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+}
+#myWebsite #mywork .worktitle{
+    overflow: hidden;
+}
+#mywork img{
+    width: 180px;
+    height: 180px;
+}
+#mywork .wordcard{
+    width:600px;
+    height: 700px;
+    margin: 80px 535px;
+    position: relative;
+ }
+#mywork .wordcard .basework{
+    position: absolute;
+    top: 50px;
+    left:-44px;
+    display: none;
+}
+#mywork .bigcover{
+    width:300px;
+    height: 300px;
+    background: wheat;
+    position: absolute;
+    top:10px;
+    left:-300px;
+    text-align: center;
+    line-height: 50px;
+ }
+#mywork  .cover{
+    width: 40px;
+    height:200px;
+    position:absolute;
+    top:130px;
+    color: #fff;
+}
+#mywork .worktitle li{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    color: #fff;
+}
+#mywork .workSelect{
+    background: #0086b3;
+}
+#mywork .wordcard .workshow{
+    display: block;
+}
+
+/*//////////*/
+#myWebsite #goup{
+    width:60px;
+    height: 92px;
+    background: url("../web-image/go-top.jpeg");
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+}
+#myWebsite #goup:hover{
+    background-position: -93px;
+}
+#myWebsite #contact{
+    position: relative;
+    background: white;
+}
+#myWebsite #contact .callme{
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top:14px;
+    right:627px;
+    color: black
+}
+#myWebsite #contact .tell{
+    position: absolute;
+    top:100px;
+    right:-35px;
+    text-align: center;
+    font-size: 25px;
+    color:blue;
+}
